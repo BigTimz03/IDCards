@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 500px;
+    height: 700px;
+}
+
+.main {
+    display: flex;
+    background: whitesmoke;
+    border: solid black;
+}
+
+.group {
+    background-color: white;
+    width: 50px;
+    height: 700px;
+    align-content: flex-end;
+    padding-bottom: 180px;
+}
+
+.group h3 {
+    font-size: 4.4rem;
+    color: darkgreen;
+    transform: rotate(270deg);
+    white-space: nowrap;
+}
+
+.rest {
+    border-left: solid black;
+    width: 450px;
+    border-right: solid black;
+}
+
+.LG {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    height: 50px;
+}
+
+.post {
+    background-color: white;
+    height: 620px;
+    padding: 40px 0 20px 0;
+}
+
+.post img {
+    height: 500px;
+    width: 450px;
+    padding: 0 25px 20px 25px;
+}
+
+.post h2 {
+    text-align: center;
+    font-size: 3rem;
+    flex-shrink: 1;
+}
+
+.end {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    white-space: nowrap;
+    /*width: 30px;*/
+}
