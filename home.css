@@ -8,25 +8,80 @@ body {
     background: url('asset/nysc_logo.png');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 5vw 0 5vw;
+    align-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #621919fe;
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+header h4 {
+    color: wheat;
+    padding-top: 10px;
+}
+
+.header {
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
 }
 
 .main {
     background-color: wheat;
     opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding-bottom: 2vh;
 }
 
 h1 {
-    font-size: 4rem;
-    text-align: center;
+    font-size: 7vw;
     color: darkgreen;
-    font-family: cursive;
+    font-family: 'cambria', serif;
+    white-space: nowrap;
+    text-align: center;
+    padding: 20px 0 10px 0;
 }
 
-h4, p {
-    font-size: 1.5rem;
+.list {
+    background-color: #621919fe;
+    border-radius: 10px 50px 10px 10px;
+    width: 75vw;
+    padding: 2vh 0 2vh 0;
+}
+
+p {
+    font-size: 6vw;
+    padding: 1vh 0 1vh 0;
+    background: linear-gradient(to top, black, white, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    font-size: 4vw;
     text-align: center;
     color: #00000095;
-    padding: 15px;
+    padding-bottom: 1vh;
 }
 
 a {
@@ -35,9 +90,20 @@ a {
     justify-content: center;
 }
 
-div {
-    background-color: #621919fe;
-    margin: 10px 50px 10px 50px;
-    border-radius: 40px;
-    padding: 30px 0 30px 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

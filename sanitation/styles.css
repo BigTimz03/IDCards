@@ -5,8 +5,8 @@
 }
 
 body {
-    width: 500px;
-    height: 700px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .main {
@@ -17,14 +17,15 @@ body {
 
 .group {
     background-color: white;
-    width: 50px;
-    height: 700px;
-    align-content: flex-end;
-    padding-bottom: 68px;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 
 .group h3 {
-    font-size: 4.4rem;
+    font-size: 7vw;
     color: darkgreen;
     transform: rotate(270deg);
     white-space: nowrap;
@@ -32,7 +33,8 @@ body {
 
 .rest {
     border-left: solid black;
-    width: 450px;
+    width: 90%;
+    height: 100%;
     border-right: solid black;
 }
 
@@ -40,45 +42,64 @@ body {
     background-color: red;
     color: white;
     text-align: center;
-    font-size: 3rem;
-    height: 50px;
+    font-size: 8vw;
+    height: 10%;
 }
 
 .post {
     background-color: white;
-    height: 620px;
+    height: 80%;
     padding: 40px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .post img {
-    height: 500px;
-    width: 450px;
-    padding: 0 25px 20px 25px;
+    width: 80%;
+    height: auto;
 }
 
 .post h2 {
-    text-align: center;
-    font-size: 3rem;
-    flex-shrink: 1;
+    font-size: 7vh;
 }
 
 .end {
     background-color: red;
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 5vw;
     white-space: nowrap;
-    /*width: 30px;*/
+    height: 10%;
 }
 
 .foot {
     display: flex;
     justify-content: space-around;
-    background-color: wheat;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10%;
+    transition: transform 0.3s ease-in-out;
+    gap: 5px;
+}
+
+.hide-foot {
+  transform: translateY(100%);
 }
 
 a {
     text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
+    font-size: 5vw;
+    color: white;
+}
+
+button {
+    border: 2px solid;
+    background-image: radial-gradient(circle, #00000095, #621919fe, brown);
+    border-radius: 30px;
+    padding: 10px;
+    opacity: 0.9;
 }
