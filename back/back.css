@@ -20,8 +20,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
     padding: 20px;
+    text-align: center;
 }
 
 .body {
