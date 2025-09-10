@@ -94,9 +94,9 @@ a {
 .lost {
     text-align: right;
     color: black;
-    position: fixed;
     bottom: 0;
-    right: 5;
+    display: flex;
+    justify-content: space-between;
 }
 
 
